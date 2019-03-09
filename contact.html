@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("user_2RwKVxaoouuKYOq39qfIe");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_form', this);
+                console.log("mail sent");
+            });
+        }
+    </script>
+    
+    <title>Knit Safety</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " >
+        <img src="photos/knit safety logo.jpg" id="logo-img">
+        <a class="navbar-brand" href="index.html">Knit Safety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="knittedgloves.html">Knitted Gloves</a> 
+                  <div class=" dropdown dropleft">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" style="background-color:white;  ">
+                            Heat/Cut Resistant Gloves
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="">
+                        
+                        <a class="dropdown-item" href="Cut Resistant Glove.html">Knitted Gloves</a>
+                        <a class="dropdown-item" href="leather.html">Leather Gloves</a>
+                       
+                      </div>
+                    </div>
+                <a class="dropdown-item" href="Kevlar Leather Gloves.html">Kevlar Leather Gloves</a>
+                  
+                <div class=" dropdown dropleft">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="background-color:white;  ">
+                       Leather Gloves
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="">
+                      <a class="dropdown-item" href="drivers gloves.html">Drivers Gloves</a>
+                      <a class="dropdown-item" href="canadian gloves.html">Canadian Gloves</a>
+                      <a class="dropdown-item" href="workWear.html">Welders Gloves</a>
+                    </div>
+                  </div>
+                
+                
+                <a class="dropdown-item" href="Protective-Sleeves.html">Protective-Sleeves</a>
+                <div class=" dropdown dropleft">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="background-color:white;  ">
+                    Industrial Garments
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="">
+                    
+                    <a class="dropdown-item" href="Welders Apparael.html">Welders Apparel</a>
+                    <a class="dropdown-item" href="Welders Apparael.html">Work Wear</a> 
+                   
+                  </div>
+                </div>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                 </li>        
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="slider-container">
+        <div class="responsive " id="slider">
+          <div class="slider-image"><img src="slider 1.jpg" width="200px" height="200px"> </div>
+          <div class="slider-image"><img src="slider 2.jpg"width="200px" height="200px"> </div>
+          <div class="slider-image"><img src="slider 3.png"width="200px" height="200px"> </div>
+          <div class="slider-image"><img src="slider4.jpg"width="200px" height="200px"> </div>
+          <div class="slider-image"><img src="slider 5.jpg"width="200px" height="200px"> </div>
+          <div class="slider-image"><img src="slider 6.jpg"width="200px" height="200px"> </div>
+        </div>
+      </div>
+       
+    <div class="wrapper">  
+    
+        <div id="contactus-Left">
+
+        <h2 id="contactus-left-1" >Our location </h2>  
+
+          <p id="contactus-left-2"><strong>KNIT SAFETY PRIVATE LIMITED </strong>
+
+            90 PHEARS LANE, NANDA TOWERS 7TH FLOOR,
+             ROOM NO.705, KOLKATA -700012   ( INDIA )
+            <br>
+            <br>
+            Mr. Amit Saboo 
+              <br>
+            Phone:  +91-93313-54321
+            <br>
+            <br>
+            <strong>Email: knitsafety@hotmail.com</strong>
+            
+            </p>
+          
+
+          
+        </div>
+     
+        <form class="contact-right" id="contact-form">
+            <h2 >Enquiry Form</h2>
+            <div class="form-group">
+                <input type="hidden" name="contact_number">
+              <label for="name"class="l">Enter Name</label>
+              <input class="form-control" type="text" placeholder="Enter Name" name="user_name">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="user_email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text"></textarea><br>
+              <input type="submit" class="btn btn-primary" value="Submit">
+            </div>
+          </form>
+        
+          
+
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+          crossorigin="anonymous"></script>
+        
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script src="script.js"></script>
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        
+      </body>
+
+</html>
+    
+    
+   
+</body>
+</html>

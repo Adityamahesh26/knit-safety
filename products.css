@@ -1,0 +1,199 @@
+.content-intro{
+    margin-top: 20px;
+}
+
+.subcategory-header{
+    width: 100%;
+
+    background: black;  
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: none;
+    border-radius: 5px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 5px auto !important;
+}
+
+aside{
+    float: left;
+    margin: 10px;
+}
+
+.scroll-along{
+    top: 100px;
+    position: fixed;
+}
+
+aside .content-intro h3{
+    margin: 1px 0;
+    text-align: center;
+}
+
+.sidepane{
+    width: 300px;
+    background: #F1F1F1;
+    
+    padding: 30px 10px;
+    border-radius: 5px;
+}
+
+.sidepane ul{
+    list-style-type: none;
+}
+
+.sidepane ul li.side-heading{
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    list-style-type: square;
+}
+
+.sidepane ul li a {
+    margin-left: 15px;
+}
+
+.sidepane ul li.side-heading a{
+    color: black;
+    margin-left: 0 !important;
+}
+
+
+
+.catalog-container{
+    width: 100%;
+    padding: 20px;
+    margin: none;
+    max-width: 900px;
+    float: right;
+}
+.catalog-item{
+    padding: 20px 10px;
+}
+
+.item-id{
+    background: yellow;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+
+}
+
+.item-desc{
+    display: block;
+    margin: 10px 0 10px 0;
+    font-size: 12px;
+    border: 2px solid rgb(0, 0, 0);
+    height: 100%;
+    padding-left: 5px;
+}
+
+.card-img-top {
+    margin-bottom: 10px;
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+}
+
+.item-body{
+    overflow: hidden;
+    padding:none;
+    height: 100%;
+    border-bottom: 2px solid black;
+}
+
+.card{
+    padding:none;
+    background: white;
+    width: 250px;
+    height: 100%;
+    border: none;
+    margin: 0 auto;
+}
+
+.subcategory{
+    border-radius: 5px;
+    background: #F1F1F1;
+
+    margin: 0px;
+}
+
+.cut-2-3{
+    padding: 20px;
+}
+
+.cut-2-3 .subcategory{
+    height: 500px;
+}
+
+.cut-2-3 .subcategory .catalog-item{
+    margin: 5px auto;
+}
+
+@media screen and (max-width: 1250px){
+    aside{
+        display: none !important;
+    }
+    .catalog-container{
+        float: left;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .catalog-container{
+        padding: none !important;
+        margin : none!important;
+    }
+
+    .subcategory{
+        padding: none !important;
+        margin : none !important;
+        box-shadow: none;
+        border: none;
+    }
+
+    .cut-2-3{
+        padding: none !important;
+    }
+
+    .catalog-item{
+        padding: none;
+        width: 300px;
+    }
+}
+
+.property{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: 
+        'desc prop prop prop';
+    margin: 5px 0;
+}
+
+.property .descprop{
+    grid-area: desc;
+    display: block;
+    font-weight: bold;
+    width: 100px;
+}
+
+.property .desc{    
+    color: #524f4f;
+    display: block;
+    grid-area: prop;
+    text-align: left;
+    width: 140px;
+}
+
+.left-align{
+    text-align: left !important;
+}
+
